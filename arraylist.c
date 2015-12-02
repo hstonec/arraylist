@@ -1,7 +1,6 @@
 /*
  * This program is a basic implementation of ArrayList.
- * It just supports adding, sorting and reversing operations
- * because it is enough for this ls program. 
+ * It just supports adding, sorting and reversing operations. 
  * 
  * Notice that when you add an object to the list, you
  * only add the reference of the object to the list. So,
@@ -251,7 +250,7 @@ check_index(ARRAYLIST *list, size_t index)
 {
 	if (index >= list->size) {
 		(void)fprintf(stderr, 
-		      "arraylist: index [%ld] out of range [0, %ld]\n",
+		      "arraylist: index [%zu] out of range [0, %zu]\n",
 			  index,
 			  list->size - 1);
 		exit(EXIT_FAILURE);
